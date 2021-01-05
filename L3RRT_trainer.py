@@ -40,7 +40,7 @@ z_dim = 2
 data_dim = 3*img_dim + u_dim # x_i, x_i+1, x_empty (to pass through obstacles), control input (x,y unit vector)
 
 mb_size = 128
-lr = 1e-4
+lr = 1e-5
 
 h_CC_dim = 128
 conv_CC_filters = 10
@@ -166,8 +166,8 @@ dataset_test_r = dataset_test[shuffler,:]
 
 
 # 2. Train the model
-EPOCHS = 1000
-TRAIN_BATCH_SIZE = 15
+EPOCHS = 2500
+TRAIN_BATCH_SIZE = 1
 ITERATIONS = int(np.floor(dataset_train.shape[0]/TRAIN_BATCH_SIZE))
 
 current_batch = np.zeros((TRAIN_BATCH_SIZE, dataset_row_dim))
