@@ -1,6 +1,12 @@
-# LSBMP
-Files for the visual planning problem in Robot Motion Planning in Learned Latent Spaces by Brian Ichter and Marco Pavone. This includes the network architecture for that problem and an implementation of L2RRT. 
+KAIST Motion Planning & Application (CS686): Fall 2020 Course Project
+----
 
-To use first unzip model.tar.qz (this includes the pretrained network parameters. The rest can be done through the LSBMP_geometric.ipynb notebook.
+**Base Paper**: Robot Motion Planning in Learned Latent Spaces https://arxiv.org/pdf/1807.10366.pdf
+This repository is a fork of the original work, posted here by the authors: https://github.com/StanfordASL/LSBMP
 
-Note, currently training data or scripts are not included due to their size. We expect to support this soon to show an example of the required data.
+The project in a nutshell:
+----
+
+The project goal is to replicate the original work and to explore its capabilities.   
+Moreover, we try to improve its performances introducing a learned sampler in the latent control action sampling process.  
+Result slides: https://kaistackr-my.sharepoint.com/:p:/g/personal/finazzi_kaist_ac_kr/EWiBjzjEMtBHqPybZR3_HugBPUAn9fP_pRxjU70zjIHGUw?e=hSX0G8
